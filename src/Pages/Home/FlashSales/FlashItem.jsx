@@ -1,4 +1,5 @@
-import img from '../../../assets/Images/flash img.png'
+/* eslint-disable react/prop-types */
+// import img from '../../../assets/Images/flash img.png'
 import { FaStar } from "react-icons/fa";
 import { MdFavoriteBorder } from "react-icons/md";
 import { FiEye } from "react-icons/fi";
@@ -7,7 +8,7 @@ import { ShopContext } from '../../../Context/Context';
 import { Link } from 'react-router-dom';
 
 function FlashItem({ data }) {
-    
+
 
     const { setAddToCart, addToCart,favorite,setFavorite, setProduct} = useContext(ShopContext)
 

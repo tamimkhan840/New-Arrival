@@ -9,7 +9,7 @@ const App = () => {
     <ContextProvider>
       <AccoutProvider >
 
-    <Layout />
+        <Layout />
 
       </AccoutProvider>
     </ContextProvider>

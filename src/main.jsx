@@ -2,18 +2,18 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
-import App from './App.jsx'
-import Home from './Pages/Home/Home.jsx'
-import About from './Pages/About/About.jsx'
-import Sign_Up from './Pages/Sign_Up/Sign_Up.jsx'
-import Contact from './Pages/Contact/Contact.jsx'
-import Error from './Pages/ErrorPage/Error.jsx'
-import AddToCart from './Pages/AddToCart/AddToCart.jsx'
-import Log_In from './Pages/Log_In/Log_In.jsx'
-import WishList from './Pages/Wishlist/WishList.jsx'
-import Billing_Details from './Pages/Billing_Details/Billing_Details.jsx'
-import Product_Details from './Pages/Product_Details_Page/Product_Details.jsx'
-import My_Accout from './Pages/My_Account/My_Accout.jsx'
+import App from './App';
+import Error from './Pages/ErrorPage/Error';
+import Home from './Pages/Home/Home';
+import Contact from './Pages/Contact/Contact';
+import About from './Pages/About/About';
+import Sign_Up from './Pages/Sign_Up/Sign_Up';
+import AddToCart from './Pages/AddToCart/AddToCart';
+import WishList from './Pages/Wishlist/WishList';
+import Billing_Details from './Pages/Billing_Details/Billing_Details';
+import Product_Details from './Pages/Product_Details_Page/Product_Details';
+import Log_In from './Pages/Log_In/Log_In';
+import My_Accout from "./Pages/My_Account/My_Accout"
 
 
 const router = createBrowserRouter([
@@ -45,10 +45,6 @@ const router = createBrowserRouter([
         element: <AddToCart />
       },
       {
-        path: '/log-in',
-        element: <Log_In />
-      },
-      {
         path: '/wishlist',
         element: <WishList />
       },
@@ -64,6 +60,10 @@ const router = createBrowserRouter([
       {
         path: '/Products/:details',
         element: <Product_Details />
+      },{
+        path: "/log-in",
+        element: <Log_In />
+
       }
     ]
   }
